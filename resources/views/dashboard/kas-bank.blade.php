@@ -5,53 +5,68 @@
 <div class="container-fluid">
             <div class="fade-in">
               <div class="card">
-                <div class="card-header"> Data - Data</div>
+                <div class="card-header"> Kas & Bank</div>
                 <div class="card-body">
+                  
                   <div class="row">
 			
                     <div class="col-lg-3 col-6">
                     <!-- small box -->
-                      <div class="small-box bg-primary">
+                      <div class="small-box bg-blue">
                         <div class="inner">
-                          <h3>34</h3>
+                          <h3>234</h3>
               
-                          <p>Data Nama Alamat</p>
+                          <p>Kas Keluar</p>
                         </div>
                         <div class="icon">
-                          <i class="fa fa-user"></i>
+                          <i class='fa fa-arrow-right'></i>
                         </div>
-                        <a href="?hal=data_nama_alamat" class="small-box-footer">Detail <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="?hal=unit" class="small-box-footer">Detail <i class="fa fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
                     
                     <!-- ./col -->
                     <div class="col-lg-3 col-6">
                       <!-- small box -->
-                      <div class="small-box bg-orange">
+                      <div class="small-box bg-info">
                         <div class="inner">
-                          <h3>34</h3>
+                          <h3>567</h3>
               
-                          <p>Data Rekening</p>
+                          <p>Kas Masuk</p>
                         </div>
                         <div class="icon">
-                        <i class="fa fa-id-card"></i>
+                        <i class='fa fa-arrow-left'></i>
                         </div>
                         <a href="?hal=ind" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
+              
                     <div class="col-lg-3 col-6">
                       <!-- small box -->
-                      <div class="small-box bg-info">
+                      <div class="small-box bg-purple">
                         <div class="inner">
-                          <h3>45</h3>
-              
-                          <p>Data Mata Uang</p>
+                          <h3>543</h3>
+                          <p>Transfer Kas</p>
                         </div>
                         <div class="icon">
-                        <i class="fa fa-database"></i>
+                          <i class='fas fa-cash-register'></i>
                         </div>
-                        <a href="?hal=akun" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                      </div>
+                    </div>
+              
+                    <div class="col-lg-3 col-6">
+                      <!-- small box -->
+                      <div class="small-box bg-orange">
+                        <div class="inner">
+                          <h3>234/h3>
+                          <p>Rekonsiliasi Bank</p>
+                        </div>
+                        <div class="icon">
+                          <i class='fa fa-building'></i>
+                        </div>
+                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
@@ -59,11 +74,11 @@
                       <!-- small box -->
                       <div class="small-box bg-green">
                         <div class="inner">
-                          <h3>34</h3>
-                          <p>Data Proyek</p>
+                          <h3>890</h3>
+                          <p>Giro Masuk</p>
                         </div>
                         <div class="icon">
-                          <i class="fa fa-cogs"></i>
+                          <i class='fa fa-arrow-down'></i>
                         </div>
                         <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
@@ -71,97 +86,21 @@
               
                     <div class="col-lg-3 col-6">
                       <!-- small box -->
-                      <div class="small-box bg-dark">
+                      <div class="small-box bg-red">
                         <div class="inner">
-                          <h3>34</h3>
-                          <p>Data Produk</p>
+                          <h3>789</h3>
+                          <p>Giro Keluar</p>
                         </div>
                         <div class="icon">
-                          <i class="fa fa-sharp fa-solid fa-lock"></i>
-                        </div>
-                        <a href="?hal=user" class="small-box-footer"><i class="fas fa-sharp fa-solid fa-lock"></i></a>
-                      </div>
-                    </div>
-              
-                    <div class="col-lg-3 col-6">
-                      <!-- small box -->
-                      <div class="small-box bg-dark">
-                        <div class="inner">
-                          <h3>34</h3>
-                          <p>Satuan Pengukuran</p>
-                        </div>
-                        <div class="icon">
-                          <i class="fa fa-sharp fa-solid fa-lock"></i>
-                        </div>
-                        <a href="?hal=user" class="small-box-footer"><i class="fas fa-sharp fa-solid fa-lock"></i></a>
-                      </div>
-                    </div>
-              
-                    <div class="col-lg-3 col-6">
-                      <!-- small box -->
-                      <div class="small-box bg-purple">
-                        <div class="inner">
-                          <h3>34</h3>
-                          <p>Data Pajak</p>
-                        </div>
-                        <div class="icon">
-                          <i class="fa fa-percent"></i>
+                          <i class='fa fa-arrow-up'></i>
                         </div>
                         <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
-              
-                    <div class="col-lg-3 col-6">
-                      <!-- small box -->
-                      <div class="small-box bg-fuchsia">
-                        <div class="inner">
-                          <h3>34</h3>
-                          <p>Data Departemen</p>
-                        </div>
-                        <div class="icon">
-                          <i class="fa fa-sitemap"></i>
-                        </div>
-                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
-                      </div>
-                    </div>
-              
-                    <div class="col-lg-3 col-6">
-                      <!-- small box -->
-                      <div class="small-box bg-dark">
-                        <div class="inner">
-                          <h3>34</h3>
-                          <p>Data Gudang</p>
-                        </div>
-                        <div class="icon">
-                          <i class="fa fa-sharp fa-solid fa-lock"></i>
-                        </div>
-                        <a href="?hal=user" class="small-box-footer"><i class="fas fa-sharp fa-solid fa-lock"></i></a>
-                      </div>
-                    </div>
-              
-                    <div class="col-lg-3 col-6">
-                      <!-- small box -->
-                      <div class="small-box bg-maroon">
-                        <div class="inner">
-                          <h3>23</h3>
-                          <p>Data Harta Tetap</p>
-                        </div>
-                        <div class="icon">
-                          <i class="fa fa-gavel"></i>
-                        </div>
-                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
-                      </div>
-                    </div>
-              
-              
-              
-              
-              
               
               
                     <!-- ./col -->
                   </div>
-                 
                 </div>
               </div>
              
