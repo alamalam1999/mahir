@@ -11,17 +11,24 @@
 |
 */
 
+use App\Http\Controllers\backend\Buku_besarController;
+use App\Http\Controllers\backend\Buku_bukuController;
+use App\Http\Controllers\backend\Data_dataController;
+use App\Http\Controllers\backend\Kas_bankController;
+use App\Http\Controllers\backend\PembelianController;
+use App\Http\Controllers\backend\PenjualanController;
+use App\Http\Controllers\backend\PersediaanController;
+
 Route::group(['middleware' => ['get.menu']], function () {
     Route::get('/', function () {           return view('dashboard.homepage'); });
 
     Route::group(['middleware' => ['role:user']], function () {
-        Route::get('/data-data', function () {     return view('dashboard.data-data'); });
-        Route::get('/buku-besar', function () { return view('dashboard.buku-besar'); });
-
-        Route::get('/penjualan', function () {     return view('dashboard.penjualan'); });
-        Route::get('/pembelian', function () {     return view('dashboard.pembelian'); });
-        Route::get('/kas-bank', function () {     return view('dashboard.kas-bank'); });
-        Route::get('/persediaan', function () {     return view('dashboard.persediaan'); });
+        Route::get('/data-data' , [Data_dataController::class , 'index'])->name('web.data-data');
+        Route::get('/buku-besar', [Buku_besarController::class, 'index'])->name('web.buku-buku');
+        Route::get('/penjualan' , [PenjualanController::class , 'index'])->name('web.penjualan');
+        Route::get('/pembelian' , [PembelianController::class , 'index'])->name('web.pembelian');
+        Route::get('/kas-bank'  , [Kas_bankController::class  , 'index'])->name('web.kas-bank');
+        Route::get('/persediaan', [PersediaanController::class, 'index'])->name('web.persediaan');
 
         Route::get('/charts', function () {     return view('dashboard.charts'); });
         Route::get('/widgets', function () {    return view('dashboard.widgets'); });

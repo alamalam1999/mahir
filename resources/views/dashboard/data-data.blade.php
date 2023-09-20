@@ -20,7 +20,7 @@
                         <div class="icon">
                           <i class="fa fa-user"></i>
                         </div>
-                        <a href="?hal=data_nama_alamat" class="small-box-footer">Detail <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="" class="small-box-footer">Detail <i class="fa fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
                     
