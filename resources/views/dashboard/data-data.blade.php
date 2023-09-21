@@ -51,7 +51,7 @@
                         <div class="icon">
                         <i class="fa fa-database"></i>
                         </div>
-                        <a href="?hal=akun" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-mata-uang') }}" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
@@ -65,7 +65,7 @@
                         <div class="icon">
                           <i class="fa fa-cogs"></i>
                         </div>
-                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-proyek') }}" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
@@ -107,7 +107,7 @@
                         <div class="icon">
                           <i class="fa fa-percent"></i>
                         </div>
-                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-pajak') }}" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
@@ -121,7 +121,7 @@
                         <div class="icon">
                           <i class="fa fa-sitemap"></i>
                         </div>
-                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-departemen') }}" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
@@ -149,7 +149,7 @@
                         <div class="icon">
                           <i class="fa fa-gavel"></i>
                         </div>
-                        <a href="?hal=user" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-harta-tetap') }}" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               
