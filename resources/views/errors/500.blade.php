@@ -7,8 +7,8 @@
         <div class="col-md-6">
           <div class="clearfix">
             <h1 class="float-left display-3 mr-4">500</h1>
-            <h4 class="pt-3">Houston, we have a problem!</h4>
-            <p class="text-muted">The page you are looking for is temporarily unavailable.</p>
+            <h4 class="pt-3">Ado problem nah jingok i jangan lari!</h4>
+            <p class="text-muted">Tetap semangat jangan bekecik Hati.</p>
           </div>
           <div class="input-prepend input-group">
             <div class="input-group-prepend"><span class="input-group-text">

@@ -20,7 +20,7 @@
                         <div class="icon">
                           <i class="fa fa-user"></i>
                         </div>
-                        <a href="" class="small-box-footer">Detail <i class="fa fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-nama-alamat') }}" class="small-box-footer">Detail <i class="fa fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
                     
@@ -36,7 +36,7 @@
                         <div class="icon">
                         <i class="fa fa-id-card"></i>
                         </div>
-                        <a href="?hal=ind" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
+                        <a href="{{ route('web.data-rekening') }}" class="small-box-footer">Detail <i class="fas fa-arrow-circle-right"></i></a>
                       </div>
                     </div>
               

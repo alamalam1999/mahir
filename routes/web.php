@@ -30,6 +30,9 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::get('/kas-bank'  , [Kas_bankController::class  , 'index'])->name('web.kas-bank');
         Route::get('/persediaan', [PersediaanController::class, 'index'])->name('web.persediaan');
 
+        Route::get('/data-alamat-penjualan', [Data_dataController::class , 'data_nama_alamat'])->name('web.data-nama-alamat');
+        Route::get('/data-rekening'        , [Data_dataController::class , 'data_rekening'])->name('web.data-rekening');
+
         Route::get('/charts', function () {     return view('dashboard.charts'); });
         Route::get('/widgets', function () {    return view('dashboard.widgets'); });
         Route::get('/404', function () {        return view('dashboard.404'); });

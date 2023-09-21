@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\backend;
 
 use App\Http\Controllers\Controller;
+use App\Models\data_nama_alamat;
+use App\Models\data_rekening;
 use Illuminate\Http\Request;
 
 class Data_dataController extends Controller
@@ -82,5 +84,15 @@ class Data_dataController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function data_nama_alamat() {
+        $data = data_nama_alamat::where('name','!=','null')->paginate( 5 );
+        return view('dashboard.data_nama_alamat.data_nama_alamat', ['data' => $data]);
+    }
+
+    public function data_rekening() {
+        $data = data_rekening::where('nama_rekening_dari','!=','null')->paginate( 5 );
+        return view('dashboard.data_rekening.data_rekening', ['data' => $data]);
     }
 }

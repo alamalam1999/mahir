@@ -20,7 +20,7 @@ if(!function_exists('renderDropdown')){
                 if( $data[$i]['slug'] === 'link' ){
                     echo '<li class="c-sidebar-nav-item">';
                     echo '<a class="c-sidebar-nav-link" href="' . url($data[$i]['href']) . '">';
-                    echo '<span class="' . $data[$i]['icon'] . ' c-sidebar-nav-icon"></span>' . $data[$i]['name'] . '</a></li>';
+                    echo '<span class=" c-sidebar-nav-icon"></span>' . $data[$i]['name'] . '</a></li>';
                 }elseif( $data[$i]['slug'] === 'dropdown' ){
                     renderDropdown( $data[$i] );
                 }
