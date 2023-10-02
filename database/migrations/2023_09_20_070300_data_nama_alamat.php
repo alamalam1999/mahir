@@ -23,7 +23,7 @@ class DataNamaAlamat extends Migration
             $table->string('email');
             $table->bigInteger('no_telepon');
             $table->timestamps();
-            $table->$table->timestamp('deleted_at');
+            $table->timestamp('deleted_at');
         });
     }
 
