@@ -17,6 +17,7 @@
                         <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
+                            <th>No</th>
                             <th>Pemilik Harta</th>
                             <th>Jenis Harta</th>
                             <th>Asal Harta</th>
@@ -27,9 +28,11 @@
                             <th>Deskripsi</th>
                           </tr>
                         </thead>
+                        <?php $no = 1; ?>
                         <tbody>
                           @foreach($data as $datas)
                             <tr>
+                              <td>{{ $no++ }}</td>
                               <td><strong>{{ $datas->pemilik_harta }}</strong></td>
                               <td><strong>{{ $datas->jenis_harta }}</strong></td>
                               <td>{{ $datas->asal_harta }}</td>

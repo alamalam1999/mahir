@@ -17,6 +17,7 @@
                         <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
+                            <th>No</th>
                             <th>Nama Departemen</th>
                             <th>Jenis Departemen</th>
                             <th>Jumlah Karyawan Departemen</th>
@@ -26,8 +27,10 @@
                           </tr>
                         </thead>
                         <tbody>
+                          <?php $no = 1; ?>
                           @foreach($data as $datas)
                             <tr>
+                              <td>{{ $no++ }}</td>
                               <td><strong>{{ $datas->nama_departemen }}</strong></td>
                               <td><strong>{{ $datas->jenis_departemen }}</strong></td>
                               <td>{{ $datas->jumlah_karyawan_departemen }}</td>

@@ -20,12 +20,11 @@ class Data_dataController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        //
         return view('dashboard.data-data');
     }
 
     public function data_nama_alamat() {
-        $data = data_nama_alamat::where('name','!=','null')->paginate( 5 );
+        $data = data_nama_alamat::where('deleted_at','=',null)->paginate( 5 );
         return view('dashboard.data_nama_alamat.data_nama_alamat', ['data' => $data]);
     }
 
@@ -58,4 +57,62 @@ class Data_dataController extends Controller
         $data = data_harta_tetap::where('pemilik_harta','!=','null')->paginate(5);
         return view('dashboard.data_harta_tetap.data_harta_tetap', ['data' => $data]);
     }
+
+    public function add_data_alamat() {    
+        return view('dashboard.data_nama_alamat.add_data_alamat');
+    }
+
+    public function tambah_data_alamat(Request $request) {   
+        $checkresponse = data_nama_alamat::insert([
+            'name'              => $request->name,
+            'provinsi'          => $request->provinsi,
+            'kabupaten'         => $request->kabupaten,
+            'daerah'            => $request->daerah,
+            'no_hp'             => $request->no_hp,
+            'email'             => $request->email,
+            'no_telepon'        => $request->no_telepon
+        ]);
+        if (!empty($checkresponse)) {
+			return
+				response()->json(['success' => true, 'message' => 'Data Berhasil Dimasukkan']);
+		}      
+        //return redirect()->back() ->with('alert', 'Pendaftaran tidak berhasil ,silahkan coba kembali \n ');
+    }
+
+    public function edit_data_alamat($id) {
+        $checkstatus = data_nama_alamat::where('id', $id)->first();
+        return view('dashboard.data_nama_alamat.edit_data_alamat', ['checkstatus' => $checkstatus]);
+    }
+
+    public function delete_data_alamat(Request $request) {
+
+        date_default_timezone_set('Asia/Jakarta');
+		$checkstatus = data_nama_alamat::where('id', $request->id)
+		->update([
+			'deleted_at' => date("Y-m-d H:i:s")
+			]);
+          
+            if($checkstatus) {
+                return response()->json(['success' => true, 'message' => 'Berhasil dihapus']);
+            }
+    }
+
+    public function update_data_alamat(Request $request) {
+        $checkresponse = data_nama_alamat::where('id', $request->id_data)
+        ->update([
+            'name'              => $request->name,
+            'provinsi'          => $request->provinsi,
+            'kabupaten'         => $request->kabupaten,
+            'daerah'            => $request->daerah,
+            'no_hp'             => $request->no_hp,
+            'email'             => $request->email,
+            'no_telepon'        => $request->no_telepon
+			]);
+
+        if (!empty($checkresponse)) {
+			return
+				response()->json(['success' => true, 'message' => 'Data Berhasil Di Update']);
+		} 
+    }
+
 }

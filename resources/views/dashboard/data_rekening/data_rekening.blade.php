@@ -17,6 +17,7 @@
                         <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
+                            <th>No</th>
                             <th>Nama Rekening Dari</th>
                             <th>Rekening Dari</th>
                             <th>Rekening Tujuan</th>
@@ -27,8 +28,10 @@
                           </tr>
                         </thead>
                         <tbody>
+                          <?php $no = 1; ?>
                           @foreach($data as $datas)
                             <tr>
+                              <td>{{ $no++ }}</td>
                               <td><strong>{{ $datas->nama_rekening_dari }}</strong></td>
                               <td><strong>{{ $datas->rekening_dari }}</strong></td>
                               <td>{{ $datas->rekening_tujuan }}</td>

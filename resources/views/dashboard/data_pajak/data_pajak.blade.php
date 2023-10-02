@@ -17,6 +17,7 @@
                         <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
+                            <th>No</th>
                             <th>Nama Pajak</th>
                             <th>Jenis Pajak</th>
                             <th>Tipe Pajak</th>
@@ -28,6 +29,7 @@
                         <tbody>
                           @foreach($data as $datas)
                             <tr>
+                              <td>{{ $no++ }}</td>
                               <td><strong>{{ $datas->nama_pajak }}</strong></td>
                               <td><strong>{{ $datas->jenis_pajak }}</strong></td>
                               <td>{{ $datas->tipe_pajak }}</td>

@@ -39,6 +39,14 @@ Route::group(['middleware' => ['get.menu']], function () {
         Route::get('/data-departemen'      , [Data_dataController::class , 'data_departemen'])->name('web.data-departemen');
         Route::get('/data-harta-tetap'     , [Data_dataController::class , 'data_harta_tetap'])->name('web.data-harta-tetap');
 
+        Route::get('/add-data-alamat'      , [Data_dataController::class , 'add_data_alamat'])->name('web.add-data-alamat');
+        Route::post('/tambah-data-alamat'  , [Data_dataController::class , 'tambah_data_alamat'])->name('web.tambah-data-alamat');
+
+        Route::get('/edit-data-alamat/{id}'     , [Data_dataController::class , 'edit_data_alamat'])->name('web.edit-data-alamat');
+        Route::post('/update-data-alamat'       , [Data_dataController::class , 'update_data_alamat'])->name('web.update-data-alamat');
+
+        Route::post('/delete-data-alamat'  , [Data_dataController::class , 'delete_data_alamat'])->name('web.delete-data-alamat');
+
         Route::get('/charts', function () {     return view('dashboard.charts'); });
         Route::get('/widgets', function () {    return view('dashboard.widgets'); });
         Route::get('/404', function () {        return view('dashboard.404'); });

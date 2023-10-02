@@ -67,7 +67,9 @@
     </script>
 
     <link href="{{ asset('css/coreui-chartjs.css') }}" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
+    <script src="assets/js/scripts.bundle.js"></script>  
   </head>
   <body class="c-app flex-row align-items-center">
 

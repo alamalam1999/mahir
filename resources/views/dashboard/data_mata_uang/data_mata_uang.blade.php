@@ -17,6 +17,7 @@
                         <table class="table table-responsive-sm table-striped">
                         <thead>
                           <tr>
+                            <th>No</th>
                             <th>Nama Mata Uang</th>
                             <th>Jenis Mata uang</th>
                             <th>Pecahan Uang</th>
@@ -26,8 +27,10 @@
                           </tr>
                         </thead>
                         <tbody>
+                          <?php $no = 1; ?>
                           @foreach($data as $datas)
                             <tr>
+                              <td>{{ $no++ }}</td>
                               <td><strong>{{ $datas->nama_mata_uang }}</strong></td>
                               <td><strong>{{ $datas->jenis_mata_uang }}</strong></td>
                               <td>{{ $datas->pecahan_uang }}</td>
