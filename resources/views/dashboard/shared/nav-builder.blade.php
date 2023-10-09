@@ -31,12 +31,12 @@ if(!function_exists('renderDropdown')){
 ?>
 
 
-        <div class="c-sidebar-brand">
+        <div id="sidebar" class="c-sidebar-brand">
             <link href="{{ asset('/assets/brand/coreui-signet-white.svg') }}" rel="stylesheet">
             <img class="c-sidebar-brand-full" src="{{ url('/assets/brand/mahir-logo.svg') }}" width="46" height="46" alt="CoreUI Logo">
             <img class="c-sidebar-brand-minimized" src="{{ url('assets/brand/mahir-logo.svg') }}" width="118" height="46" alt="CoreUI Logo">
         </div>
-        <ul class="c-sidebar-nav">
+        <ul id="sidebar" class="c-sidebar-nav">
         @if(isset($appMenus['sidebar menu']))
             @foreach($appMenus['sidebar menu'] as $menuel)
                 @if($menuel['slug'] === 'link')

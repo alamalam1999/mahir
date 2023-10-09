@@ -15,6 +15,7 @@
 /public/vendors
 /public/public
 /storage/*.key
+/public/.DS_Store
 .DS_Store
 /public/assets/.DS_Store
 .env
