@@ -105,7 +105,7 @@
                     
                     </div>
                     <div class="card-footer">
-                        <i class="fa fa-align-justify"></i>notes
+                        <button class="btn btn-flex btn-primary ms-5" type="submit">Update</button>
                     </div>
                 </form>
                  </div>
